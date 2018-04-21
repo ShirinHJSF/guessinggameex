@@ -1,13 +1,12 @@
-var userInput = prompt("Guess a number!");
+var answer = prompt("are we there yet?");
 
-var correctNumber = 5;
+while(answer !== "yes") {
+  var answer = prompt("are we there yet?");
+}
 
-if (parseInt(userInput) === 5) {
-  alert("You Won!");
 
-} else if (parseInt(userInput) < 5) {
-  alert("It's too low!");
-
+if(answer === "yes") {
+  alert("Yay, We made it!")
 } else {
-  alert("It's too high!");
+  var answer = prompt("are we there yet?");
 }
